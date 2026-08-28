@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/icon.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Soundwave - Audio and Video</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                DEFAULT: "#6366f1",
+                accent: "#818cf8",
+              },
+              "bg-dark": "#0f172a",
+              "bg-card": "#1e293b",
+              "text-light": "#f8fafc",
+              "text-muted": "#94a3b8",
+              border: "#334155",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-bg-dark font-sans text-text-light antialiased leading-relaxed"
+  >
+    <header
+      class="fixed top-0 left-0 w-full h-[70px] bg-bg-dark/85 backdrop-blur-md border-b border-border flex justify-between items-center px-[5%] z-50"
+    >
+      <a href="/" class="text-2xl font-bold text-text-light"
+        >Sound<span class="text-primary">Wave</span></a
+      >
+      <nav>
+        <ul class="flex list-none gap-5">
+          <li><a href="/index.html" class="">Home</a></li>
+          <li><a href="#about-us" class="">About Us</a></li>
+          <li><a href="/gallery.html" class="">Gallery</a></li>
+          <li><a href="/media.html" class="">Audio & Video</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div>
+      <video autoplay loop muted playsinline>
+        <source src="/videos/coverr-serene-evening-music-session-1080p.mp4" />
+        Your browser does not support HTML5 video.
+      </video>
+
+      <!-- Dark Tint Overlay -->
+      <div></div>
+
+      <!-- Hero Content -->
+      <div>
+        <h1>Immersive Audio &amp; Visual Experience</h1>
+        <p>
+          Explore our curated collection of high-fidelity soundscapes, live
+          studio performances, and video showcases.
+        </p>
+        <a href="#media-section">Browse Showcase</a>
+      </div>
+    </div>
+
+    <main id="#media-section">
+      <h2>Featured Videos</h2>
+
+      <div>
+        <div>
+          <h3>Studio Production Reel</h3>
+          <video controls>
+            <source
+              src="/videos/coverr-serene-evening-music-session-1080p.mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+          <p>Behind-the-scenes footage from our main recording control room.</p>
+        </div>
+
+        <div>
+          <h3>Live Acoustic Demo</h3>
+          <video controls>
+            <source
+              src="/videos/coverr-serene-evening-music-session-1080p.mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+          <p>
+            Acoustic performance recorded with surround spatial microphones.
+          </p>
+        </div>
+      </div>
+
+      <h2>Audio Tracks</h2>
+      <div>
+        <div>
+          <h3>Ambient Synthesizer Track</h3>
+          <p>Relaxing analog synth arrangement mixed in Dolby Atmos space.</p>
+          <audio controls>
+            <source src="/audios/Zentry-Song.m4a" />
+          </audio>
+        </div>
+
+        <div>
+          <h3>Studio Guitar Session</h3>
+          <p>Raw acoustic guitar recording testing frequency balance.</p>
+          <audio controls>
+            <source src="/audios/Zentry-Song.m4a" />
+          </audio>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>
+        &copy; 2026 Soundwave Media Studio. Built with HTML5 &amp; CSS3 only.
+      </p>
+    </footer>
+  </body>
+</html>
