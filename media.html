@@ -37,42 +37,97 @@
       >
       <nav>
         <ul class="flex list-none gap-5">
-          <li><a href="/index.html" class="">Home</a></li>
-          <li><a href="#about-us" class="">About Us</a></li>
-          <li><a href="/gallery.html" class="">Gallery</a></li>
-          <li><a href="/media.html" class="">Audio & Video</a></li>
+          <li>
+            <a
+              href="/index.html"
+              class="text-text-muted hover:text-text-light hover:bg-bg-card font-semibold px-4 py-2 rounded-md transition-all duration-300"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about-us"
+              class="text-text-muted hover:text-text-light hover:bg-bg-card font-semibold px-4 py-2 rounded-md transition-all duration-300"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="/gallery.html"
+              class="text-text-muted hover:text-text-light hover:bg-bg-card font-semibold px-4 py-2 rounded-md transition-all duration-300"
+              >Gallery</a
+            >
+          </li>
+          <li>
+            <a
+              href="/media.html"
+              class="text-text-light bg-bg-card font-semibold px-4 py-2 rounded-md transition-all duration-300"
+              >Audio & Video</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
 
     <!-- Hero Section -->
-    <div>
-      <video autoplay loop muted playsinline>
+    <div
+      class="relative w-full h-[80vh] min-h-[500px] flex items-center justify-center text-center overflow-hidden mt-[70px]"
+    >
+      <video
+        autoplay
+        loop
+        muted
+        playsinline
+        class="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto z-10 -translate-x-1/2 -translate-y-1/2 object-cover"
+      >
         <source src="/videos/coverr-serene-evening-music-session-1080p.mp4" />
         Your browser does not support HTML5 video.
       </video>
 
       <!-- Dark Tint Overlay -->
-      <div></div>
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-[#0f172a]/25 via-[#0f172a]/45 to-bg-dark z-20"
+      ></div>
 
       <!-- Hero Content -->
-      <div>
-        <h1>Immersive Audio &amp; Visual Experience</h1>
-        <p>
+      <div class="relative z-30 max-w-[800px] px-5">
+        <h1
+          class="text-3xl md:text-[3.2rem] font-extrabold mb-4 leading-tight text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.7)]"
+        >
+          Immersive Audio &amp; Visual Experience
+        </h1>
+        <p
+          class="text-base md:text-xl text-[#f1f5f9] mb-7 drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)]"
+        >
           Explore our curated collection of high-fidelity soundscapes, live
           studio performances, and video showcases.
         </p>
-        <a href="#media-section">Browse Showcase</a>
+        <a
+          href="#media-section"
+          class="inline-block bg-primary hover:bg-primary-accent text-white px-7 py-3 rounded-lg font-semibold transition-all duration-200"
+          >Browse Showcase</a
+        >
       </div>
     </div>
 
-    <main id="#media-section">
-      <h2>Featured Videos</h2>
+    <main
+      id="#media-section"
+      class="pt-10 pb-[60px] max-w-[1100px] mx-auto px-5"
+    >
+      <h2 class="text-2xl font-bold mb-6 border-l-4 border-primary pl-3">
+        Featured Videos
+      </h2>
 
-      <div>
-        <div>
-          <h3>Studio Production Reel</h3>
-          <video controls>
+      <div
+        class="grid grid-cols-[repeat(auto-fit, minmax(320px, 1fr))] gap-6 mb-[60px]"
+      >
+        <div
+          class="bg-bg-card border border-border rounded-xl p-5 flex flex-col gap-4"
+        >
+          <h3 class="text-lg font-semibold text-text-light">
+            Studio Production Reel
+          </h3>
+          <video controls class="w-full rounded-lg outline-none">
             <source
               src="/videos/coverr-serene-evening-music-session-1080p.mp4"
             />
@@ -95,12 +150,22 @@
         </div>
       </div>
 
-      <h2>Audio Tracks</h2>
-      <div>
-        <div>
-          <h3>Ambient Synthesizer Track</h3>
-          <p>Relaxing analog synth arrangement mixed in Dolby Atmos space.</p>
-          <audio controls>
+      <h2 class="text-2xl font-bold mb-6 border-l-4 border-primary pl-3">
+        Audio Tracks
+      </h2>
+      <div
+        class="grid grid-cols-[repeat(auto-fit, minmax(320px, 1fr))] gap-6 mb-[60px]"
+      >
+        <div
+          class="bg-bg-card border border-border rounded-xl p-5 flex flex-col gap-4"
+        >
+          <h3 class="text-lg font-semibold text-text-light">
+            Ambient Synthesizer Track
+          </h3>
+          <p class="text-sm text-text-muted">
+            Relaxing analog synth arrangement mixed in Dolby Atmos space.
+          </p>
+          <audio controls class="w-full rounded-lg outline-none">
             <source src="/audios/Zentry-Song.m4a" />
           </audio>
         </div>
